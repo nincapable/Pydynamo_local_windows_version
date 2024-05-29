@@ -97,13 +97,13 @@ Il existe deux types de sauvegarde :
 
 - 1. Une sauvegarde temporaire dans le navigateur, en cas de coupure avec le serveur, de problème d'alimentation etc.
 
-![Sauvegarde et Chargement dans le navigateur](Documentation\Sauvegarde_depuis_navigateur.png)
+![Sauvegarde et Chargement dans le navigateur](Documentation/Sauvegarde_depuis_navigateur.png)
 
 - 2. Une sauvegarde permanente en téléchargeant le fichier modifié.
 
-![Sauvegarde en local](Documentation\Sauvegarde_en_local.png)
+![Sauvegarde en local](Documentation/Sauvegarde_en_local.png)
 
-![Chargement en local](Documentation\Chargement_en_local.png)
+![Chargement en local](Documentation/Chargement_en_local.png)
 
 ### Jouer
 
