@@ -102,7 +102,7 @@ Il existe deux types de sauvegarde :
 - 2. Une sauvegarde permanente en téléchargeant le fichier modifié.
 
 ![Sauvegarde en local](Documentation/Sauvegarde_en_local.png)
-
+- 3. Chargement d'un fichier dans l'environnement.
 ![Chargement en local](Documentation/Chargement_en_local.png)
 
 ### Jouer
