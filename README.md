@@ -108,7 +108,8 @@ Il existe deux types de sauvegarde :
 ### Jouer
 
 Dans le notebook TP.ipynb, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
-#Liens de Secours : 
+
+## Liens de Secours : 
 - Recréer le lien Binder en cas d'expiration : Aller sur ce site : https://mybinder.org/ et utiliser ce lien : https://github.com/nincapable/pydynamo_local_Unix_version.git (Attention il doit s'agir de la version Unix).
 - Lien vers la page de Achille Baucher, à l'origine du projet pydynamo : https://gitlab.inria.fr/abaucher/pydynamo
 - Lien vers la bibliothèque Pydynamo : https://pypi.org/project/pydynamo-w/
