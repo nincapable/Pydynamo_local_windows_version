@@ -25,7 +25,8 @@ def get_sectors(fname):
 
             else:
                 try:
-                    var = re.findall('^(\w*)[\. \=]', l)[0]
+                    #var = re.findall('^(\w*)[\. \=]', l)[0]#########################
+                    var = re.findall(r'^(\w*)[\. \=]', l)[0]
                     sectors[var] = sector
                     subsectors[var] = subsector
 

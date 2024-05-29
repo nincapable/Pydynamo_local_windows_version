@@ -57,7 +57,8 @@ def new_cst_politic(self, cst, date, new_value):
 
     # Change every call of cst to a call of cst.k
     for i in range(len(self.code_lines)):
-        self.code_lines[i] = re.sub(f'(?<!\w){cst}(?!\w)', f'{cst}.k', self.code_lines[i])
+        #self.code_lines[i] = re.sub(f'(?<!\w){cst}(?!\w)', f'{cst}.k', self.code_lines[i])#######################################################################
+        self.code_lines[i] = re.sub(f'(?<!\\w){cst}(?!\\w)', f'{cst}.k', self.code_lines[i])
         
     self.add_equations([eq_clip, eq_date, eq_cst1, eq_cst2])
     self.reset_eqs()

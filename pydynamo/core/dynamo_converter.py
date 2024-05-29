@@ -27,8 +27,12 @@ def dy2pydy(l):
         DYNAMO equation.
     """ 
     l = re.sub('^[ATRCLS] ', '', l)
-    l = re.sub('^N (\w*)', '\\1.i', l)        
-    l = re.sub('(?!<\w)smooth\((\w+?)\.k(?!\w)', 'smooth(\\1.j',l)
-    l = re.sub('\.kl', '.k', l)
-    l = re.sub('\.jk', '.j', l)
+    #l = re.sub('^N (\w*)', '\\1.i', l)  #############################################################
+    l = re.sub(r'^N (\w*)', r'\1.i', l)
+    #l = re.sub('(?!<\w)smooth\((\w+?)\.k(?!\w)', 'smooth(\\1.j',l)###############################
+    l = re.sub(r'(?!<\\w)smooth\((\\w+?)\.k(?!\\w)', r'smooth(\1.j', l)
+    #l = re.sub('\.kl', '.k', l)###############################################
+    l = re.sub(r'\.kl', '.k', l)
+    #l = re.sub('\.jk', '.j', l)#############################################
+    l = re.sub(r'\.jk', '.j', l)
     return l

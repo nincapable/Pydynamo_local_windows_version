@@ -274,7 +274,7 @@ class System:
             # Case it's not a tabhl function, check if it's a clip from 1 to 2
             try:
                 a, b, *_ = self.eqs['update'][name]['args']['fun']['clip']['args']
-                name = re.sub('\.[jk]', '', b.strip())
+                name = re.sub(r'\.[jk]', '', b.strip())
             except KeyError:
                 raise Exception(f"Error, {name} is not updated with a non linear function, and is not a switch between to variables with a non linear function") from None
 
@@ -284,7 +284,7 @@ class System:
         x = np.linspace(f.xl, f.xh, 100)
         ylabel = name + '\n'+ self.definition(name)
         argop = self.eqs['update'][name]['args']['fun']['tabhl']['val'].strip()
-        argop = re.sub('^\(|\)$', '',re.sub('\.[jk]', '', argop)).strip()
+        argop = re.sub(r'^\(|\)$', '',re.sub(r'\.[jk]', '', argop)).strip()
         xlabel = argop + ('\n'+ self.definition(argname) if argop==argname else '')
         return x, f(x), ylabel, xlabel, f"{name} non-linear function"
 
@@ -315,7 +315,7 @@ class System:
             if node in eqq:
                 try:
                     if 'tabhl' in eqq[node]['raw_line']:
-                        return f'{node}.k = ' + re.sub('tabhl', f'NLF_{node}t', re.sub('\_([jk])', '.\\1', eqq[node]['line']))
+                        return f'{node}.k = ' + re.sub('tabhl', f'NLF_{node}t', re.sub(r'\_([jk])', '.\\1', eqq[node]['line']))
                     return self.raw_equation(node)
                 except:
                     print(node, eqq)
@@ -694,7 +694,7 @@ class System:
                          for tt in tps.difference({t})
                          for n in u[tt + '_args']):
                     if tt == 'var':
-                        n = re.sub('\_[jk]', '', n)
+                        n = re.sub(r'\_[jk]', '', n)
                     assert n not in self.nodes[t], ''.join((
                         f'Wrong call of {n}',
                         f' (which is of type {t})\n',

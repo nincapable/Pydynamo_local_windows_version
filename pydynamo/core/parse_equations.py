@@ -24,7 +24,8 @@ def change_points_to_underscores(line, variables):
         Equation changed.
     """ 
     for v, i in variables:
-        line = re.sub(f'(?!<\w){v}.{i}(?!\w)', f'{v}_{i}', line)
+        #line = re.sub(f'(?!<\w){v}.{i}(?!\w)', f'{v}_{i}', line)#######################################################################
+        line = re.sub(f'(?!<\\w){v}\\.{i}(?!\\w)', f'{v}_{i}', line)
     return line
 
 def reformat_eq(root, variables):
