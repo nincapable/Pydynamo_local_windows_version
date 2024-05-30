@@ -1,19 +1,42 @@
 # Arbre de Décision Pydynamo
 
-## Avec un Système Unix, ou une virtual machine
-
-### Installation
-- Télécharger le TP à l'adresse [https://gitlab.inria.fr/abaucher/pydynamo/-/raw/TPworld3/TP.ipynb?inline=false](https://gitlab.inria.fr/abaucher/pydynamo/-/raw/TPworld3/TP.ipynb?inline=false)
-
-#### Option A: Avec le jupyterhub de l'UGA si vous avez un compte UGA
+## Pour ne rien installer
+### Option A: Avec le jupyterhub de l'UGA si vous avez un compte UGA
 - Se connecter à [https://jupyterhub.univ-grenoble-alpes.fr](https://jupyterhub.univ-grenoble-alpes.fr) avec ses identifiants UGA
 - Appuyer sur le bouton **upload** en haut à droite, et sélectionner le TP téléchargé
 - Aller dans la rubrique **Nbextensions**, puis cocher les extensions:
   - *Exercise2*
   - *Table of Contents (2)*
 - Revenir sur le menu files et lancer le notebook TP.ipynb en cliquant dessus
+### Option B : En ligne depuis un serveur Binder
 
-#### Option B: Autrement, en local sous Linux
+Le TP peut être lancé dans un environnement virtuel Binder en utilisant le lien : [https://mybinder.org/v2/gh/nincapable/pydynamo_local_unix.git/HEAD?labpath=.%2FTP.ipynb](https://mybinder.org/v2/gh/nincapable/pydynamo_local_unix.git/HEAD?labpath=.%2FTP.ipynb)
+
+Il est aussi possible de le faire par tout autre moyen équivalent à binder qui exécute un environnement virtuel Unix muni de python, en fournissant au serveurs le lien du répertoire git : [https://github.com/nincapable/pydynamo_local_Unix_version.git](https://github.com/nincapable/pydynamo_local_Unix_version.git)
+
+### Pour sauvegarder son travail
+
+Il existe deux types de sauvegarde :
+
+- 1. Une sauvegarde temporaire dans le navigateur, en cas de coupure avec le serveur, de problème d'alimentation etc.
+
+![Sauvegarde et Chargement dans le navigateur](Documentation/Sauvegarde_depuis_navigateur.png)
+
+- 2. Une sauvegarde permanente en téléchargeant le fichier modifié.
+
+![Sauvegarde en local](Documentation/Sauvegarde_en_local.png)
+- 3. Chargement d'un fichier dans l'environnement.
+![Chargement en local](Documentation/Chargement_en_local.png)
+
+### Jouer
+
+Dans le notebook TP.ipynb, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
+
+## Avec un Système Unix, ou une virtual machine
+
+### Installation
+- Télécharger le TP à l'adresse [https://gitlab.inria.fr/abaucher/pydynamo/-/raw/TPworld3/TP.ipynb?inline=false](https://gitlab.inria.fr/abaucher/pydynamo/-/raw/TPworld3/TP.ipynb?inline=false)
+
 - Exigences :
   - Il faut avoir Python3 
   - Le module a été testé sous Ubuntu 20
@@ -54,6 +77,7 @@
 ### Jouer
 
 Dans le notebook TP.ipynb, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
+
 ## Avec un Système Windows
 
 ### Installation du répertoire de TP
@@ -103,31 +127,6 @@ Téléchargez le répertoire `pydynamo_local_windows_version` depuis github.com 
 ### Jouer
 Dans le notebook `TP.ipynb`, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
 
-## Pour ne rien installer
-
-### Lancer le TP
-
-Le TP peut être lancé dans un environnement virtuel Binder en utilisant le lien : [https://mybinder.org/v2/gh/nincapable/pydynamo_local_unix.git/HEAD?labpath=.%2FTP.ipynb](https://mybinder.org/v2/gh/nincapable/pydynamo_local_unix.git/HEAD?labpath=.%2FTP.ipynb)
-
-Il est aussi possible de le faire par tout autre moyen équivalent qui exécute un environnement virtuel Unix en fournissant le lien du répertoire git : [https://github.com/nincapable/pydynamo_local_Unix_version.git](https://github.com/nincapable/pydynamo_local_Unix_version.git)
-
-### Pour sauvegarder son travail
-
-Il existe deux types de sauvegarde :
-
-- 1. Une sauvegarde temporaire dans le navigateur, en cas de coupure avec le serveur, de problème d'alimentation etc.
-
-![Sauvegarde et Chargement dans le navigateur](Documentation/Sauvegarde_depuis_navigateur.png)
-
-- 2. Une sauvegarde permanente en téléchargeant le fichier modifié.
-
-![Sauvegarde en local](Documentation/Sauvegarde_en_local.png)
-- 3. Chargement d'un fichier dans l'environnement.
-![Chargement en local](Documentation/Chargement_en_local.png)
-
-### Jouer
-
-Dans le notebook TP.ipynb, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
 
 ## Liens de Secours : 
 - Recréer le lien Binder en cas d'expiration : Aller sur ce site : https://mybinder.org/ et utiliser ce lien : https://github.com/nincapable/pydynamo_local_Unix_version.git (Attention il doit s'agir de la version Unix).
