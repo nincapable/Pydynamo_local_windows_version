@@ -56,33 +56,53 @@
 Dans le notebook TP.ipynb, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
 ## Avec un Système Windows
 
-### Installation de Python
+### Installation du répertoire de TP
+Téléchargez le répertoire `pydynamo_local_windows_version` depuis github.com ([https://github.com/nincapable/Pydynamo_local_windows_version/archive/refs/heads/main.zip](https://github.com/nincapable/Pydynamo_local_windows_version/archive/refs/heads/main.zip))
 
-- 1. Allez sur le site officiel de Python : [https://www.python.org.](https://www.python.org.)
-- 2. Cliquez sur le lien de téléchargement pour obtenir la dernière version stable de Python pour Windows. Cela devrait être un fichier .exe.
-- 3. Lancez l'exécuteur :
+### Installation de Python
+1. Allez sur le site officiel de Python : [https://www.python.org](https://www.python.org).
+2. Cliquez sur le lien de téléchargement pour obtenir la dernière version stable de Python pour Windows. Cela devrait être un fichier .exe.
+3. Lancez l'installeur :
     - Cochez la case "Add Python to PATH" en bas de la fenêtre de l'installateur. Cela permettra de s'assurer que vous pouvez exécuter Python depuis n'importe quel répertoire dans la ligne de commande.
     - Cliquez sur "Install Now" pour installer Python avec les paramètres par défaut. Vous pouvez également choisir "Customize installation" pour spécifier des paramètres d'installation supplémentaires.
-- Vérifiez l'installation avec ces commandes :
+4. Vérifiez l'installation avec ces commandes :
     ```bash
     python --version
     pip --version
     ```
-- Installez le module *ipykernel* à l'aide des commandes :
+5. Si pip n'est pas installé, téléchargez `get-pip.py` ([https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py)) et exécutez :
     ```bash
-    pip install --upgrade pip
-    pip install ipykernel
+    python get-pip.py
+    pip --version
+    pip install requests
     ```
 
-### Installation du TP et de Nteract
+### Pour lancer le TP, au choix
 
-- 1. Téléchargez et lancez l'installeur depuis la page *nteract.io* ([lien de téléchargement](https://github.com/nteract/nteract/releases/download/v0.28.0/nteract-Setup-0.28.0.exe))
-- 2. Téléchargez le répertoire *pydynamo_local_windows_version* depuis GitHub ([lien de téléchargement](https://github.com/nincapable/Pydynamo_local_windows_version/archive/refs/heads/main.zip))
-- 3. Dans le répertoire *pydynamo_local_windows_version*, ouvrez le fichier *TP.ipynb* avec Nteract.
+#### Avec Jupyter
+1. Installation de Jupyter :
+    ```bash
+    pip install jupyter
+    jupyter --version
+    ```
+    Vérifiez la présence du module *ipykernel*.
+2. Dans le répertoire `pydynamo_local_windows_version` précédemment téléchargé, exécutez la commande :
+    ```bash
+    jupyter notebook TP.ipynb
+    ```
+
+#### Avec Nteract
+1. Téléchargez et lancez l'installeur depuis la page *nteract.io* ([https://github.com/nteract/nteract/releases/download/v0.28.0/nteract-Setup-0.28.0.exe](https://github.com/nteract/nteract/releases/download/v0.28.0/nteract-Setup-0.28.0.exe))
+2. Installez le module *ipykernel* à l'aide des commandes :
+    ```bash
+    pip install --upgrade pip
+    pip install --upgrade ipykernel
+    ```
+3. Dans le répertoire `pydynamo_local_windows_version`, ouvrez le fichier `TP.ipynb` avec Nteract.
 
 ### Jouer
+Dans le notebook `TP.ipynb`, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
 
-Dans le notebook TP.ipynb, des textes et morceaux de codes montrent l'idée et le fonctionnement de *Pydynamo* et du modèle World3. On peut faire différentes expériences de simulation en changeant des paramètres, et étudier certains phénomènes.
 ## Pour ne rien installer
 
 ### Lancer le TP
