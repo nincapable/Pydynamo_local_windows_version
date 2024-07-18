@@ -1,7 +1,7 @@
 import nbformat
 
 # Load the provided notebook
-notebook_path = 'TP_Version_1_M.ipynb'
+notebook_path = 'TP_interactive_version.ipynb'
 with open(notebook_path, 'r', encoding='utf-8') as f:
     notebook = nbformat.read(f, as_version=4)
 
