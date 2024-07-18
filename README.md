@@ -12,6 +12,8 @@
 
 Le TP peut être lancé dans un environnement virtuel Binder en utilisant le lien : [https://mybinder.org/v2/gh/nincapable/pydynamo_local_unix.git/HEAD?labpath=.%2FTP.ipynb](https://mybinder.org/v2/gh/nincapable/pydynamo_local_unix.git/HEAD?labpath=.%2FTP.ipynb)
 
+Il existe une version plus interactive disponible par le lien : [https://mybinder.org/v2/gh/nincapable/pydynamo_local_Unix_version/HEAD?labpath=TP_interactive_version%28final%29.ipynb](https://mybinder.org/v2/gh/nincapable/pydynamo_local_Unix_version/HEAD?labpath=TP_interactive_version%28final%29.ipynb)
+
 Il est aussi possible de le faire par tout autre moyen équivalent à binder qui exécute un environnement virtuel Unix muni de python, en fournissant au serveurs le lien du répertoire git : [https://github.com/nincapable/pydynamo_local_Unix_version.git](https://github.com/nincapable/pydynamo_local_Unix_version.git)
 
 ### Pour sauvegarder son travail
